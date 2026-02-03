@@ -1,4 +1,4 @@
-# 🧠 SubsParser Telegram
+# 🧠 Users Parser Telegram
 The Telegram Usernames Exporter is a powerful tool designed to fetch usernames from Telegram entities and save them to Excel files. This project aims to provide a simple and efficient way to manage and analyze Telegram user data. With its robust features and user-friendly setup, this tool is perfect for developers, researchers, and anyone looking to extract valuable insights from Telegram entities.
 
 ## 🚀 Key Features
