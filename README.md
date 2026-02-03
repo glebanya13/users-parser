@@ -1,42 +1,59 @@
-# Subsparser - Telegram Channel Parser Tool
+# 🧠 SubsParser Telegram
+The Telegram Usernames Exporter is a powerful tool designed to fetch usernames from Telegram entities and save them to Excel files. This project aims to provide a simple and efficient way to manage and analyze Telegram user data. With its robust features and user-friendly setup, this tool is perfect for developers, researchers, and anyone looking to extract valuable insights from Telegram entities.
 
-Subsparser is a powerful Telegram channel parser tool created by Gleb. It provides automated extraction of channel participants and members, exports data to Excel format with customizable columns, and offers comprehensive channel analytics.
+## 🚀 Key Features
+- **Entity Resolution**: Resolve target entities, including groups, channels, and chats.
+- **Username Fetching**: Fetch usernames from resolved entities, handling large datasets with ease.
+- **Data Chunking**: Split fetched data into manageable chunks for efficient processing.
+- **Excel Export**: Save usernames to separate Excel files, making it easy to analyze and visualize the data.
+- **Error Handling**: Robust error handling to ensure the application remains stable and reliable.
+- **Configuration Management**: Centralized configuration management using environment variables.
 
-## Features
+## 🛠️ Tech Stack
+* Frontend: None
+* Backend: Node.js
+* Database: None
+* AI Tools: None
+* Build Tools: None
+* Libraries:
+  + `telegram` for interacting with the Telegram API
+  + `dotenv` for loading environment variables
+  + `qrcode-terminal` for generating QR codes
+  + `xlsx` for creating and writing Excel files
 
-### Channel parsing capabilities
-- Extracts participants from public and private Telegram channels
-- Supports various search filters (alphabetical, cyrillic, common patterns)
-- Handles rate limiting and API restrictions automatically
-- Processes multiple participant types (recent, admins, banned, kicked)
+## 📦 Installation
+To get started with the Telegram Usernames Exporter, follow these steps:
+1. **Prerequisites**: Ensure you have Node.js installed on your system.
+2. **Clone the Repository**: Clone the Telegram Usernames Exporter repository using Git.
+3. **Install Dependencies**: Run `npm install` to install the required dependencies.
+4. **Create a `.env` File**: Create a `.env` file in the root directory and add your configuration settings, including API ID, API hash, session string, target entity, output file, maximum users per file, and excluded usernames.
 
-### Data export system
-- Exports data to Excel format with ExcelJS
-- Customizable output columns and formatting
-- Structured data organization
-- Automatic file naming and management
+## 💻 Usage
+1. **Run the Application**: Run the application using `node src/index.js`.
+2. **Follow the Prompts**: Follow the prompts to authorize the Telegram client, if necessary.
+3. **Wait for the Process to Complete**: Wait for the application to fetch usernames and save them to Excel files.
 
-### Authentication & security
-- Secure session-based authentication
-- QR code and phone number login support
-- API key management through environment variables
-- Protection against duplicate data collection
+## 📂 Project Structure
+```markdown
+.
+├── src
+│   ├── config
+│   │   ├── index.js
+│   ├── export
+│   │   ├── excel.js
+│   ├── telegram
+│   │   ├── client.js
+│   │   ├── participants.js
+│   ├── index.js
+├── .env
+├── package.json
+```
 
-## Technical implementation
+## 🤝 Contributing
+Contributions are welcome and appreciated. If you have any suggestions, bug reports, or feature requests, please submit a pull request or issue.
 
-- Built with Node.js and Telegram MTProto API (GramJS)
-- Modular architecture with separate modules for:
-  - Telegram client management
-  - Participant extraction
-  - Excel export functionality
-  - Configuration management
-- Uses environment-based configuration for:
-  - API credentials
-  - Target channel specification
-  - Output file settings
-- Features:
-  - Comprehensive error handling
-  - Rate limiting protection
-  - Session persistence
-  - Multi-language username support
-- Operates with minimal external dependencies
+## 📝 License
+The Telegram Usernames Exporter is licensed under the MIT License.
+
+## 📬 Contact
+For any questions or concerns, please contact us at [glebanya.com@gmail.com](mailto:glebanya.com@gmail.com).
